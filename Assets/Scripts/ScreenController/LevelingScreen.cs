@@ -8,6 +8,16 @@ public class LevelingScreen : MonoBehaviour
         SceneManager.LoadScene("EasyGameScene");
     }
 
+    public void LevelMedium()
+    {
+        SceneManager.LoadScene("MediumGameScene");
+    }
+
+    public void LevelHard()
+    {
+        SceneManager.LoadScene("HardGameScene");
+    }
+
 }
 
 
