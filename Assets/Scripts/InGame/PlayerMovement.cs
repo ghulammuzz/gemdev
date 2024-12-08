@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
     private int totalCollectibles = 0;
     private int currentHealth;
+    private bool isSpeedBoosted = false;
 
     void Start()
     {
@@ -76,6 +77,10 @@ public class PlayerMovement : MonoBehaviour
         {
             CollectItem(other.gameObject);
         }
+        else if (other.gameObject.CompareTag("Speeds"))
+        {
+            SpeedBoost(other.gameObject);
+        }
     }
 
     private void CollectItem(GameObject collectible)
@@ -104,6 +109,24 @@ public class PlayerMovement : MonoBehaviour
             finishMessageText.text = "Selamat Anda Menyelesaikan Level Easy!\nTotal Items: " + totalCollectibles;
         }
         Time.timeScale = 0f;
+    }
+
+        private void SpeedBoost(GameObject speedObject)
+    {
+        Destroy(speedObject); // Hancurkan objek Speeds
+        if (!isSpeedBoosted)
+        {
+            StartCoroutine(SpeedBoostCoroutine());
+        }
+    }
+
+    private System.Collections.IEnumerator SpeedBoostCoroutine()
+    {
+        isSpeedBoosted = true;
+        moveSpeed *= 2; // Gandakan kecepatan
+        yield return new WaitForSeconds(3); // Tunggu selama 3 detik
+        moveSpeed /= 2; // Kembalikan kecepatan ke normal
+        isSpeedBoosted = false;
     }
 
     public void LoadMainMenu()
