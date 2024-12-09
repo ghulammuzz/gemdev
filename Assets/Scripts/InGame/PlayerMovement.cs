@@ -106,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (finishMessageText != null)
         {
-            finishMessageText.text = "Selamat Anda Menyelesaikan Level Easy!\nTotal Items: " + totalCollectibles;
+            finishMessageText.text = "Selamat Anda Menyelesaikan Level Ini !\nTotal Items: " + totalCollectibles;
         }
         Time.timeScale = 0f;
     }
