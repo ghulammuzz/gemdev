@@ -9,11 +9,26 @@ EditorBuildSettings:
     path: Assets/Scenes/SplashScreen.unity
     guid: e2c4472540e2bb32d9dab2de3feda67c
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 05cad955b7764ab4f877f9d893e77a41
+  - enabled: 0
     path: Assets/Scenes/menu/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/menu/LevelSelection.unity
     guid: 0dc66d4ccabfb212185de81c8424f172
+  - enabled: 1
+    path: Assets/Scenes/Keterangan.unity
+    guid: cbd7f7f2af9cb9f409166fe6e06f3ebc
+  - enabled: 1
+    path: Assets/Scenes/Coin.unity
+    guid: 01665668557a38043a9da6a3738d914b
+  - enabled: 1
+    path: Assets/Scenes/SpeedBoost.unity
+    guid: e1c5454bb97120b4ca99c79cb8f21e4d
+  - enabled: 1
+    path: Assets/Scenes/CreditScene.unity
+    guid: 1721b975d0bd9a144aa5c29c8b22ec6b
   - enabled: 1
     path: Assets/Scenes/EasyGameScene.unity
     guid: 8106eb6b7c04e1c4a829791c29e7b56f
@@ -23,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HardGameScene.unity
     guid: 7dcbe266a507932aa840f677ff83175a
+  - enabled: 1
+    path: Assets/Scenes/Student.unity
+    guid: 99be6385ad527ad479b55efbe1ca6468
+  - enabled: 1
+    path: Assets/Scenes/Police.unity
+    guid: 846aa896c12d8524282a21d1c2f8f1ed
   m_configObjects: {}
