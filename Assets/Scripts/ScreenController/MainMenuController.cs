@@ -8,15 +8,30 @@ public class MainMenuController : MonoBehaviour
         SceneManager.LoadScene("LevelSelection");
     }
 
-    public void ShowCredits()
+    public void CreditScene()
     {
-        Debug.Log("Credits: Developer Name");
+        SceneManager.LoadScene("CreditScene");
+    }
+
+    public void Keterangan()
+    {
+        SceneManager.LoadScene("Keterangan");
     }
 
     public void ExitGame()
     {
         Application.Quit();
         Debug.Log("Game Exited");
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void CloseGame()
+    {
+        Debug.Log("Play Mode dihentikan!");
+        Application.Quit();
     }
 }
 

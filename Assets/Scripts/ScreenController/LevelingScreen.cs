@@ -18,6 +18,11 @@ public class LevelingScreen : MonoBehaviour
         SceneManager.LoadScene("HardGameScene");
     }
 
+    public void Exit()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
 }
 
 
