@@ -99,17 +99,47 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void ShowFinishPanel()
+{
+    if (finishPanel != null)
     {
-        if (finishPanel != null)
-        {
-            finishPanel.SetActive(true);
-        }
-        if (finishMessageText != null)
-        {
-            finishMessageText.text = "Selamat Anda Menyelesaikan Level Ini !\nTotal Items: " + totalCollectibles;
-        }
-        Time.timeScale = 0f;
+        finishPanel.SetActive(true);
     }
+    if (finishMessageText != null)
+    {
+        finishMessageText.text = "Selamat Anda Menyelesaikan Level Ini!\nTotal Items: " + totalCollectibles;
+    }
+
+    // Menyimpan progres level
+    SaveLevelProgress();
+
+    // get all save value in the local storage
+    int levelEasyCompleted = PlayerPrefs.GetInt("LevelEasyCompleted");
+    Debug.Log("level easy completed: " + levelEasyCompleted);
+
+    Time.timeScale = 0f; // Pause permainan
+}
+
+private void SaveLevelProgress()
+{
+    string currentScene = SceneManager.GetActiveScene().name;
+
+    if (currentScene == "EasyGameScene")
+    {
+        PlayerPrefs.SetInt("LevelEasyCompleted", 1);
+    }
+    else if (currentScene == "MediumGameScene")
+    {
+        PlayerPrefs.SetInt("LevelMediumCompleted", 1);
+    }
+    else if (currentScene == "HardGameScene")
+    {
+        PlayerPrefs.SetInt("LevelHardCompleted", 1);
+    }
+
+    PlayerPrefs.Save(); // Simpan perubahan ke PlayerPrefs
+    Debug.Log("Progres Level Disimpan!");
+}
+
 
         private void SpeedBoost(GameObject speedObject)
     {

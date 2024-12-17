@@ -24,7 +24,7 @@ public class EnemyController : MonoBehaviour
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        Debug.Log("Jarak ke pemain: " + distanceToPlayer); 
+        // Debug.Log("Jarak ke pemain: " + distanceToPlayer); 
 
         if (distanceToPlayer <= attackRadius)
         {
