@@ -12,7 +12,12 @@ public class SplashScreenController : MonoBehaviour
 
     void LoadMainMenu()
     {
+        // remove all saved local storage
+        PlayerPrefs.DeleteAll();
+        int levelEasyCompleted = PlayerPrefs.GetInt("LevelEasyCompleted");
+        Debug.Log("level easy completed: " + levelEasyCompleted);
         SceneManager.LoadScene("MainMenu");
+
     }
 }
 
