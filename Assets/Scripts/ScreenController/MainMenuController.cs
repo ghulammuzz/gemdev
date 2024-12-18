@@ -15,7 +15,7 @@ public class MainMenuController : MonoBehaviour
 
     public void Keterangan()
     {
-        SceneManager.LoadScene("Keterangan");
+        SceneManager.LoadScene("Student");
     }
 
     public void ExitGame()
