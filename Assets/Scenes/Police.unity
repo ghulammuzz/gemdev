@@ -455,7 +455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 2
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -798,12 +798,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Kamu adalah siswa yang terlambat ke sekolah,  lalu kamu mengambil jalan
-    pintas dan melanggar aturan lalu lintas. Kini polisi mengejarmu! Dengan 3 nyawa,
-    kumpulkan koin, gunakan strategi, dan temukan jalan ke sekolah. Larilah dari
-    kejaran polisi!
-
-'
+  m_text: Polisi akan mengejar kamu ketika kamu memasuki wilayahnya. Larilah dari
+    kejaran polisi agar nyawamu tidak berkurang. Jangan sampai tertangkap!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

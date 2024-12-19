@@ -3551,7 +3551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1072013030}
-  chaseSpeed: 400
+  chaseSpeed: 150
   attackRadius: 100
   attackRangeRadius: 26
   damage: 1
@@ -5477,7 +5477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1072013030}
-  chaseSpeed: 400
+  chaseSpeed: 150
   attackRadius: 100
   attackRangeRadius: 26
   damage: 1
@@ -5913,7 +5913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1072013030}
-  chaseSpeed: 400
+  chaseSpeed: 150
   attackRadius: 100
   attackRangeRadius: 26
   damage: 1
@@ -11677,7 +11677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1072013030}
-  chaseSpeed: 400
+  chaseSpeed: 150
   attackRadius: 100
   attackRangeRadius: 26
   damage: 1
