@@ -557,7 +557,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 123, y: -75}
+  m_AnchoredPosition: {x: 131, y: -69}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.66}
 --- !u!114 &855762299
@@ -586,17 +586,22 @@ MonoBehaviour:
 
     AZARYA ADITYA KRISNA MOELJONO
 
+    GHULAM MUZAFAR
 
 
-    ADELIA KHANSA
-    RISTIAPUTRI
+    AHMAD
+    WADEE
+
+
+
+    ADELIA KHANSA RISTIAPUTRI
 
     ELYSA NUZULUL SAFITRI
 
 
 
-    Harits Ar Rosyid , S.T., M.T.,
-    Ph.D'
+    Harits
+    Ar Rosyid , S.T., M.T., Ph.D'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -635,7 +640,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 2.26
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -810,12 +815,17 @@ MonoBehaviour:
 
 
 
+    Asset Researcher
+
+
+
     UI Designer
 
 
 
 
-    Special Thanks'
+    Special
+    Thanks'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -878,7 +888,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -214.79819, z: 1.8985596, w: 0}
+  m_margin: {x: 0, y: -226.29431, z: 1.8985596, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

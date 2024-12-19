@@ -20,7 +20,7 @@ public class MainMenuController : MonoBehaviour
 
     public void Keterangan()
     {
-        SceneManager.LoadScene("Student");
+        SceneManager.LoadScene("Police");
     }
 
     public void ExitGame()
