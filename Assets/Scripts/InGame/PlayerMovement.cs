@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private int currentHealth;
     private bool isSpeedBoosted = false;
 
+    private int targetCollectibles; // Jumlah koin yang harus dikumpulkan
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -26,6 +28,21 @@ public class PlayerMovement : MonoBehaviour
         if (finishPanel != null)
         {
             finishPanel.SetActive(false);
+        }
+
+        // Tentukan target collectible berdasarkan nama level
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene == "EasyGameScene")
+        {
+            targetCollectibles = 10;
+        }
+        else if (currentScene == "MediumGameScene")
+        {
+            targetCollectibles = 15;
+        }
+        else if (currentScene == "HardGameScene")
+        {
+            targetCollectibles = 20;
         }
 
         UpdateCollectibleText();
@@ -94,54 +111,57 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collectibleText != null)
         {
-            collectibleText.text = "Items: " + totalCollectibles;
+            collectibleText.text = "Items: " + totalCollectibles + "/" + targetCollectibles;
         }
     }
 
     private void ShowFinishPanel()
-{
-    if (finishPanel != null)
     {
-        finishPanel.SetActive(true);
-    }
-    if (finishMessageText != null)
-    {
-        finishMessageText.text = "Selamat Anda Menyelesaikan Level Ini!\nTotal Items: " + totalCollectibles;
-    }
+        // Cek apakah semua collectible telah dikumpulkan
+        if (totalCollectibles >= targetCollectibles)
+        {
+            if (finishPanel != null)
+            {
+                finishPanel.SetActive(true);
+            }
+            if (finishMessageText != null)
+            {
+                finishMessageText.text = "Selamat Anda Menyelesaikan Level Ini!\nTotal Items: " + totalCollectibles;
+            }
 
-    // Menyimpan progres level
-    SaveLevelProgress();
+            // Menyimpan progres level
+            SaveLevelProgress();
 
-    // get all save value in the local storage
-    int levelEasyCompleted = PlayerPrefs.GetInt("LevelEasyCompleted");
-    Debug.Log("level easy completed: " + levelEasyCompleted);
-
-    Time.timeScale = 0f; // Pause permainan
-}
-
-private void SaveLevelProgress()
-{
-    string currentScene = SceneManager.GetActiveScene().name;
-
-    if (currentScene == "EasyGameScene")
-    {
-        PlayerPrefs.SetInt("LevelEasyCompleted", 1);
-    }
-    else if (currentScene == "MediumGameScene")
-    {
-        PlayerPrefs.SetInt("LevelMediumCompleted", 1);
-    }
-    else if (currentScene == "HardGameScene")
-    {
-        PlayerPrefs.SetInt("LevelHardCompleted", 1);
+            Time.timeScale = 0f; // Pause permainan
+        }
+        else
+        {
+            Debug.Log("Anda belum mengumpulkan semua koin!");
+        }
     }
 
-    PlayerPrefs.Save(); // Simpan perubahan ke PlayerPrefs
-    Debug.Log("Progres Level Disimpan!");
-}
+    private void SaveLevelProgress()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
 
+        if (currentScene == "EasyGameScene")
+        {
+            PlayerPrefs.SetInt("LevelEasyCompleted", 1);
+        }
+        else if (currentScene == "MediumGameScene")
+        {
+            PlayerPrefs.SetInt("LevelMediumCompleted", 1);
+        }
+        else if (currentScene == "HardGameScene")
+        {
+            PlayerPrefs.SetInt("LevelHardCompleted", 1);
+        }
 
-        private void SpeedBoost(GameObject speedObject)
+        PlayerPrefs.Save(); // Simpan perubahan ke PlayerPrefs
+        Debug.Log("Progres Level Disimpan!");
+    }
+
+    private void SpeedBoost(GameObject speedObject)
     {
         Destroy(speedObject); // Hancurkan objek Speeds
         if (!isSpeedBoosted)
@@ -165,4 +185,3 @@ private void SaveLevelProgress()
         SceneManager.LoadScene("MainMenu");
     }
 }
-

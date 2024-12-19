@@ -66,8 +66,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Scripts\ScreenController\LevelingScreen.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
@@ -117,6 +117,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\20 Logos PSD\Fonts\chunkfiveex\SIL Open Font License 1.1.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F05\fbx_ctrl.xml" />
     <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Arum\fbx_list.txt" />
@@ -151,6 +152,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\Puppet\fbx_list.txt" />
     <None Include="Assets\TaichiCharacterPack\Shaders\toon_hair.shader" />
+    <None Include="Assets\20 Logos PSD\Fonts\kaushanscript\SIL Open Font License.txt" />
     <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F01\fbx_ctrl.xml" />
     <None Include="Assets\TaichiCharacterPack\Viewer\Resources\Taichi\Viewer Settings\animation_list.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
@@ -159,9 +161,12 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\M01\fbx_ctrl.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\20 Logos PSD\Fonts\peacesans\FREE FONT LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\20 Logos PSD\Fonts\molot\molot-eula.txt" />
     <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Arum\animation_list_a.txt" />
     <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Asphodel\facial_texture_list_b.txt" />
+    <None Include="Assets\20 Logos PSD\Fonts\Read Me.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F01\fbx_list.txt" />
     <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Asphodel\fbx_list.txt" />
@@ -170,6 +175,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\20 Logos PSD\Fonts\firasansheavy\SIL Open Font License.txt" />
     <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\Puppet\fbx_ctrl.xml" />
     <None Include="Assets\TaichiCharacterPack\Viewer\Resources\Taichi\Viewer Settings\title_text.txt" />
     <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F02\fbx_ctrl.xml" />
@@ -1215,6 +1221,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="TextToTMP.Editor.csproj" />
+    <ProjectReference Include="TextToTMP.Runtime.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
